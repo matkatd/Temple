@@ -1,0 +1,129 @@
+@font-face {
+  font-family: lancelot;
+  src: url("fonts/Lancelot-Regular.ttf");
+}
+
+:root {
+  --section-gap: 7vw;
+  --main-font: #1b365c;
+  --hover-font: #607fac;
+  --header-color: #b8e2fa;
+  --background-color: #5397ad;
+  --section-color: #b3d9e6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1em;
+  font-family: lancelot, times, serif;
+  color: #1b365c;
+  max-width: 1800px;
+  margin: auto;
+  background-color: var(--background-color);
+}
+
+header {
+  background-color: var(--header-color);
+  padding: 1em;
+  margin-bottom: 2em;
+  display: flex;
+}
+
+ul {
+  position: relative;
+  list-style-type: none;
+}
+li {
+  font-size: 2rem;
+  text-align: right;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-font);
+}
+
+.main-photo {
+  background-color: var(--section-color);
+  margin-top: var(--section-gap);
+  text-align: center;
+}
+
+.main-photo > img {
+  transform: scale(1.2);
+}
+
+.content-block {
+  display: block;
+  background-color: var(--section-color);
+  text-align: center;
+  align-items: center;
+  margin-top: var(--section-gap);
+  margin-bottom: var(--section-gap);
+  padding: 1em 0 1em 0;
+}
+
+.content-block > p {
+  padding: 1em 20% 1em 20%;
+  line-height: 1.5em;
+}
+
+.content-block > h2 {
+  padding: 1em 1em 0 1em;
+}
+
+.header-block {
+  display: flex;
+  background-color: var(--section-color);
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header-block > img {
+  transform: scale(1.2);
+}
+
+a:hover {
+  color: var(--hover-font);
+}
+img {
+  border-radius: 50%;
+  max-width: 30%;
+}
+
+.button {
+  display: grid;
+  padding: 1em;
+  border: black solid 1px;
+  max-width: 15%;
+  border-radius: 10%;
+  justify-content: center;
+  margin: auto;
+  font-family: lancelot, Times, serif;
+  font-size: 1.5em;
+  background-color: white;
+  box-shadow: 0 0 0 var(--background-color);
+}
+
+footer {
+  align-content: center;
+  text-align: center;
+  color: black;
+  font-size: 0.75em;
+}
