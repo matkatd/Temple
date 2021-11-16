@@ -20,7 +20,7 @@ body {
   font-size: 1em;
   font-family: lancelot, times, serif;
   color: #1b365c;
-  max-width: 1800px;
+  max-width: 1080px;
   margin: auto;
   background-color: var(--background-color);
 }
@@ -30,6 +30,7 @@ header {
   padding: 1em;
   margin-bottom: 2em;
   display: flex;
+  justify-content: space-around;
 }
 
 ul {
@@ -37,7 +38,7 @@ ul {
   list-style-type: none;
 }
 li {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: right;
 }
 
@@ -105,6 +106,31 @@ a:hover {
 img {
   border-radius: 50%;
   max-width: 30%;
+}
+
+#dropdown {
+  margin-top: 2.75em;
+  text-align: right;
+  position: relative;
+  align-items: center;
+}
+
+#dropdown ul {
+  display: none;
+  position: absolute;
+}
+
+#dropdown > li:hover ul {
+  display: block;
+  left: -92px;
+  background-color: var(--header-color);
+  /* position: relative; */
+}
+#dropdown ul li {
+  /* position: relative; */
+  /* background-color: var(--header-color); */
+  padding: 1rem;
+  left: -100px;
 }
 
 .button {
